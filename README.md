@@ -26,8 +26,12 @@ Este proyecto es un script de Python que carga datos desde archivos CSV en una b
    python -m venv env
    source env/bin/activate  # En Linux/Mac
    .\env\Scripts\activate  # En Windows
-3. pip install -r requirements.txt
-4. SRC_BASE_DIR=path_to_datasets_directory
+3. Instala las dependencias:
+    ```bash
+    pip install -r requirements.txt
+4. Crea un archivo .env en el directorio raíz con las siguientes variables:
+    ```bash
+    SRC_BASE_DIR=path_to_datasets_directory
     DB_HOST=localhost
     DB_PORT=5432
     DB_NAME=my_database
